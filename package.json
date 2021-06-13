@@ -5,13 +5,14 @@
   "main": "index.js",
   "scripts": {
     "main": "tsc && node ./dist/main.js",
-    "test": "tsc && jest ./dist"
+    "test": "tsc && jest ./dist/test"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@types/jest": "^26.0.23",
-    "jest": "^27.0.4"
+    "jest": "^27.0.4",
+    "pg-promise": "^10.10.2"
   }
 }
