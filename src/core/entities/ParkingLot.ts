@@ -1,11 +1,12 @@
+import Util from "../util/util"
 export default class ParkingLot {
   code: string;
   capacity: number;
-  openHour: number;
-  closeHour: number;
+  openHour: string;
+  closeHour: string;
   occupiedSpaces: number;
 
-  constructor(code: string, capacity: number, openHour: number, closeHour: number, occupiedSpaces: number) {
+  constructor(code: string, capacity: number, openHour: string, closeHour: string, occupiedSpaces: number) {
     this.code = code;
     this.capacity = capacity;
     this.openHour = openHour;
@@ -14,7 +15,7 @@ export default class ParkingLot {
   }
 
   isOpen(date: Date) {
-    const hour = date.getHours();
+    const hour = Util.horaFmtAtual();
     return (hour >= this.openHour && hour <= this.closeHour);
   }
 

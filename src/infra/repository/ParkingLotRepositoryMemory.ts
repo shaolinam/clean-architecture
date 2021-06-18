@@ -5,7 +5,7 @@ import ParkingLotRepository from "../../core/repository/ParkingLotRepository";
 export default class ParkingLotRepositoryMemory implements ParkingLotRepository {
   
   parkingLots = [
-    { code: "Shopping", capacity: 5, open_Hour: 8 , close_Hour: 22 }
+    { code: "Shopping", capacity: 5, open_Hour: "08:00:00" , close_Hour: "22:00:00" }
   ];
   parkedCars = [];
   
